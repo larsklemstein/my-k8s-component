@@ -4,6 +4,9 @@ metadata:
   annotations:
     backstage.io/kubernetes-id: my-kubernetes-component
   name: my-k8s-component
+  tags:
+    - java
+    - dockerfile
 spec:
   lifecycle: production
   owner: my-team
