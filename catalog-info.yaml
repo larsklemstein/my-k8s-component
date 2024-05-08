@@ -1,3 +1,4 @@
+---
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
@@ -8,6 +9,18 @@ metadata:
     - java
     - dockerfile
     - foo
+spec:
+  lifecycle: production
+  owner: my-team
+  type: service
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/kubernetes-id: wordpress
+  name: wordpress
 spec:
   lifecycle: production
   owner: my-team
